@@ -169,7 +169,7 @@ def create_venue_submission():
   finally:
     db.session.close()
     if error:
-        flash('An error occured. Venue ' +
+        flash('An error occurred. Venue ' +
               request.form['name'] + ' Could not be listed!')
     else:
         flash('Venue ' + request.form['name'] +
@@ -369,7 +369,7 @@ def edit_venue_submission(venue_id):
   finally:
     db.session.close()
     if error:
-        flash('An error occured. Venue could not be updated!')
+        flash('An error occurred. Venue could not be updated!')
     else:
         flash('Venue was successfully updated.')  
 
@@ -483,7 +483,7 @@ def create_show_submission():
   finally:
     db.session.close()
     if error:
-      flash('An error occured. Show could not be listed.')
+      flash('An error occurred. Show could not be listed.')
     else:
       flash('Show was successfully listed!')
   # on successful db insert, flash success
